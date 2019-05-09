@@ -110,6 +110,10 @@ address, p{
 	font-size: 20px;
 	line-height: 1.2;
 }
+span{
+    display: block;
+    margin: -5px 0;
+}
 .banner{
 	padding-bottom: 50px;
 }
@@ -165,75 +169,86 @@ footer{
 footer p{
 	font-size: 17px;
 }
-.services-header-img{
-	width: 100%;
-	margin-top: -63px;
-}
-.services-banner{
-	margin-top: 36px;
-	padding-bottom: 50px;
-	border-bottom: 1px solid black;
-}
-.services-content{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin: 25px 0 50px 0;
-	border-bottom: 1px solid black;
-	padding-bottom: 25px;
-}
-.services-content div{
-	width: 525px;
-	border: 1px solid black;
-	background: #F4F3F4;
-	padding: 25px;
-	margin: 25px 0;
-}
-.services-content div p{
-	padding: 8px 0;
-	line-height: 1.25;
-}
-.services-button{
-	width: 175px;
-	background: white;
-	margin-top: 17px;
-	padding: 9px 20px;
-	font-size: 15px;
-	font-family: 'Titillium Web', sans-serif;
-	border: 1px solid black;
-	border-radius: 5px;
-}
-.facts{
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 100px;
-}
-.facts div{
-	width: 524px;
-}
-.facts div p{
-	line-height: 1.25;
-	margin-top: 20px;
-}
-.facts div img{
-	width: 100%;
-}
-ul{
-	margin: 30px 0 0 22px;
-	font-size: 20px;
-}
-li{
-	list-style-type: square;
-}
-li p{
-	margin: 0 0 -8px 10px;
-}
-@media screen and (max-width:800px){
-body{
-  background-color: red;
+
+@media screen and (max-width:800px) and (min-width: 501px){
+  .container{
+    max-width: 800px;
+    width: 100%;
+  }
+  header{
+    flex-direction: column-reverse;
+    height: 145px;
+  }
+  .logo{
+    margin: 0 0 50px 0;
+  }
+  nav{
+    flex-wrap: wrap;
+  }
+  nav a{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 70px;
+  }
+  .banner{
+    flex-direction: column;
+    margin-top: 88px;
+  }
+  .banner-left{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .banner-right{
+    display: none;
+  }
+   h1{
+    font-size: 90px;
+  }
+  .button-home{
+    margin: 13px 0 45px 0;
+    width: 210px;
+    padding: 3px 0px;
+    font-size: 21px;
+    font-weight: bolder;
+  }
+  .main{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+  .main, .contact{
+    max-width: 750px;
+    margin: 0 auto;
+  }
+  .features{
+    margin-left: 15px;
+  }
+  .about{
+    margin-right: 15px;
+  }
+  .services, .product, .vision{
+    margin: 0 15px;
+  }
+  .features, .about{
+    width: 450px;
+  }
+  h3{
+    line-height: 1.5;
+  }
+  p{
+    line-height: 1.2;
+  }
+  .contact{
+    margin: 35px 0 0 35px;
+  }
+  footer{
+    margin: 55px 0 22px 0;
+  }
+  footer p{
+    font-size: 20px;
+  }
 }
 
-}
 @media screen and (max-width:500px) {
   .container{
     width: 100%;
@@ -278,7 +293,7 @@ body{
     font-size: 90px;
   }
   .button-home{
-    margin: 13px 0 0 0;
+    margin: 13px 0 45px 0;
     width: 210px;
     padding: 3px 0px;
     font-size: 21px;
@@ -313,10 +328,6 @@ body{
   }
   p{
     line-height: 1.1;
-  }
-  span{
-    display: block;
-    margin: -5px 0;
   }
   footer{
     margin-bottom: 25px;
