@@ -228,17 +228,23 @@ li{
 li p{
 	margin: 0 0 -8px 10px;
 }
-@media(max-width:800px){
-
+@media screen and (max-width:800px){
+body{
+  background-color: red;
+}
 
 }
-@media(max-width:500px){
+@media screen and (max-width:500px) {
+  .container{
+    width: 100%;
+  }
   header{
     flex-direction: column-reverse;
-    height: 543px;
+    height: 545px;
   }
   .logo{
-    margin: 0 auto;
+    margin: 0;
+    max-width: 229px;
   }
   nav{
     flex-direction: column;
@@ -259,7 +265,7 @@ li p{
   }
   .banner{
     flex-direction: column;
-    text-align:center;
+    text-align: center;
   }
   .banner-left{
     width: 100%;
@@ -273,10 +279,49 @@ li p{
   }
   .button-home{
     margin: 13px 0 0 0;
-  	border: 1px solid black;
     width: 210px;
     padding: 3px 0px;
     font-size: 21px;
     font-weight: bolder;
+  }
+  .main-about, .main-services{
+    flex-direction: column;
+  }
+  .features, .about, .services, .product, .vision, .container, .contact{
+    max-width: 500px;
+  }
+  .main{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+  .main, .contact{
+    max-width: 455px;
+    margin: 0 auto;
+    padding: 45px 0;
+  }
+  .services, .product, .vision{
+    width: 100%;
+  }
+  .services, .product{
+    margin-bottom: 70px;
+  }
+  .features, .about{
+    margin: 25px 0;
+  }
+  h3{
+    line-height: 1.5;
+  }
+  p{
+    line-height: 1.1;
+  }
+  span{
+    display: block;
+    margin: -5px 0;
+  }
+  footer{
+    margin-bottom: 25px;
+  }
+  footer p{
+    font-size: 20px;
   }
 }
