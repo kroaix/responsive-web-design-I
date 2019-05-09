@@ -257,4 +257,26 @@ li p{
   nav a:last-child{
     border-bottom: 1px solid black;
   }
+  .banner{
+    flex-direction: column;
+    text-align:center;
+  }
+  .banner-left{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .banner-right{
+    display: none;
+  }
+  h1{
+    font-size: 90px;
+  }
+  .button-home{
+    margin: 13px 0 0 0;
+  	border: 1px solid black;
+    width: 210px;
+    padding: 3px 0px;
+    font-size: 21px;
+    font-weight: bolder;
+  }
 }
